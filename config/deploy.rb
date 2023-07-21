@@ -27,7 +27,7 @@ set :puma_threads, [4, 16]
 set :puma_workers, 0
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
-set :puma_restart_command, 'sudo systemctl restart puma_anki_production.service'
+# set :puma_restart_command, 'sudo systemctl restart puma_anki_production.service'
 
 set :rvm_ruby_string, :local
 set :ssh_options, {
