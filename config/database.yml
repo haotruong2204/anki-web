@@ -13,7 +13,7 @@ development:
 
 test:
   <<: *default
-  database: opinion_park_test
+  database: anki_test
 
 production:
   <<: *default
