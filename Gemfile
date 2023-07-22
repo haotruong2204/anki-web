@@ -43,14 +43,20 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sass-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "pry-byebug"
+  gem "pry-rails"
+
+  # Convention
+  gem "rubocop", require: false
+  gem "rubocop-performance"
+  gem "rubocop-rspec"
+  gem "rubocop-rake"
 end
 
 group :development do
@@ -59,6 +65,9 @@ group :development do
   gem "capistrano-bundler"
   gem "capistrano-rvm"
   gem "capistrano3-puma"
+
+  gem "letter_opener"
+  gem "letter_opener_web"
 end
 
 group :test do
@@ -70,3 +79,36 @@ end
 
 # Environment variables
 gem "dotenv-rails"
+
+# Authentication & async send mail with devise
+gem "devise"
+gem "devise-async"
+
+# Schema in model
+gem "annotate"
+
+# Render error fields
+# gem "simple_form"
+
+# Strip attribute before commit
+gem "strip_attributes"
+
+# Job
+gem "sidekiq", "~> 6.4", ">= 6.4.2"
+
+# Authorization
+gem "cancancan"
+
+# Config
+gem "config"
+
+# Paginate
+gem "pagy"
+
+# Search
+gem "ransack"
+
+# Editor
+gem "ckeditor"
+gem "mini_magick"
+gem "image_processing", "~> 1.2"

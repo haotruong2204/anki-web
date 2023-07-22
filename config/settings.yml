@@ -1,0 +1,22 @@
+maxlength:
+  account_name: 32
+  password: 128
+minlength:
+  password: 8
+regex:
+  phone: /(\+84|0[3|5|7|8|9])+([0-9]{8,9})\b/
+per_page:
+  default: 20
+  accounts: 20
+date:
+  formats: "%Y.%m.%d"
+  year_month_date: "%Y年%m月%d日 %H:%M"
+  reviewed_date: "%Y-%m"
+  month_format: "%Y/%m"
+  month_to_integer: "%Y%m"
+  formats_date_step: "%Y/%m/%d"
+time:
+  formats: "%Y/%m/%d %H:%M"
+  timestamps: "%Y%m%d%H%M%S%L"
+  sort_timestamps: "%Y%m%d%H%M"
+

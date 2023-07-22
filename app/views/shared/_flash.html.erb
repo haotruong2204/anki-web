@@ -1,0 +1,4 @@
+<% flash.each do |type, message| %>
+  <% next if message.blank? %>
+  <span><%= message.html_safe %></span>
+<% end %>
