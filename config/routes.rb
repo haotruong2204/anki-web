@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   require 'sidekiq/web'
 
-  # mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   mount Sidekiq::Web => "/sidekiq"
 
   root "account/dashboard#index"
