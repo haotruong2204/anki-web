@@ -5569,10 +5569,6 @@ textarea.form-control-lg {
   filter: var(--bs-btn-close-white-filter);
 }
 
-.btn-close {
-  filter: var(--bs-btn-close-white-filter);
-}
-
 .toast {
   --bs-toast-zindex: 1090;
   --bs-toast-padding-x: 0.75rem;
@@ -28286,12 +28282,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .toast .toast-header .btn-close {
   margin-right: 0;
-}
-
-.toast {
-  --bs-toast-bg: #2B2B40;
-  --bs-toast-header-bg: #2B2B40;
-  --bs-toast-header-border-color: #323248;
 }
 
 .nav-pills .nav-item {
